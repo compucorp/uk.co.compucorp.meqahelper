@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<menu>
+  <item>
+    <path>civicrm/me-qa-helper</path>
+    <page_callback>CRM_Meqahelper_Page_QAHelper</page_callback>
+    <title>ME QA Helper</title>
+    <access_arguments>administer CiviCRM</access_arguments>
+  </item>
+
+  <item>
+    <path>civicrm/me-qa-helper/lookup</path>
+    <page_callback>CRM_Meqahelper_Ajax_LookupRequests::lookupDetails</page_callback>
+    <access_arguments>administer CiviCRM</access_arguments>
+  </item>
+
+  <item>
+    <path>civicrm/me-qa-helper/lookup-schedule</path>
+    <page_callback>CRM_Meqahelper_Ajax_LookupRequests::lookupSchedule</page_callback>
+    <access_arguments>administer CiviCRM</access_arguments>
+  </item>
+</menu>
